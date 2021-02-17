@@ -35,6 +35,14 @@ public class LoginFragment extends Fragment {
         public void onClick(View view) {
             if(mEdtUsername.getText().toString().equals("bitcode") && mEdtPassword.getText().toString().equals("bitcode")) {
                 //way 1
+
+                /*
+                getFragmentManager()
+                        .beginTransaction()
+                        .remove(LoginFragment.this)
+                        .commit();
+                 */
+
                 HomeFragment homeFragment = new HomeFragment();
 
                 Bundle input = new Bundle();
